@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 
-import {createFeedbackUseCaseAdapter} from './rest';
+import {createFeedbackUseCaseAdapter} from './adapters';
 
 const app = express()
 

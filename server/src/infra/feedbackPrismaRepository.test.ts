@@ -12,7 +12,7 @@ import feedbackPrismaRepository from './feedbackPrismaRepository';
 
 
 describe('feedbackPrismaRepository', () => {
-	const feedback = {screenshot: null, type: 'bug', comment: 'comment'}
+	const feedback = { screenshot: null, type: 'bug', comment: 'comment' }
 
 	test('Should create a feedback', () => {
 		const newFeedback = feedbackPrismaRepository.create(feedback)
