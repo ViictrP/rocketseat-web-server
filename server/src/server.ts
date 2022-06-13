@@ -10,6 +10,7 @@ app.use(express.json())
 
 app.post('/feedbacks', createFeedbackUseCaseAdapter)
 
-app.listen(3333, () => {
-	console.log('HTTP server running at port 3333')
+const port = process.env.PORT || 3333
+app.listen(process.env.PORT || 3333, () => {
+	console.log(`HTTP server running at port ${port}`)
 })
